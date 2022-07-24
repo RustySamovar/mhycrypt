@@ -1,4 +1,4 @@
-use mhycrypt::{mhy_xor, mhy_generate_key};
+use crate::mhycrypt::{mhy_xor, mhy_generate_key};
 
 #[no_mangle]
 pub extern "C" fn crypt_buffer(data: *mut char, data_size: usize, key: *mut char) {
